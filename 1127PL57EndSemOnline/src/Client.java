@@ -5,7 +5,7 @@ import org.junit.Test;
 
 
 public class Client {
-	
+	final static int DAYS=5;
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -76,7 +76,7 @@ public class Client {
 		assertEquals(15,story1.getTask(1).getHours());
 		
 		//define sprint 1 and assign stories to it
-		Sprint sprint1 = new Sprint();
+		Sprint sprint1 = new Sprint(DAYS);
 		sprint1.assignStory(story1);
 		sprint1.assignStory(story2);
 		
@@ -91,7 +91,7 @@ public class Client {
 		member4.allocateTask(task4);
 		
 		//test case for story 6
-		assertEquals("Design database",member2.getTask().toString());
+		assertEquals("Design database",member1.getTask().toString());
 		
-	}
+	}	
 }
