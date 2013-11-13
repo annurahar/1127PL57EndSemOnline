@@ -8,9 +8,12 @@ public class Team {
 		this.teamname = teamname;
 	}
 
-	public String getTeamname() {
+	/*public String getTeamname() {
+		return teamname;
+	}*/
+	
+	public String toString()
+	{
 		return teamname;
 	}
-	
-
 }

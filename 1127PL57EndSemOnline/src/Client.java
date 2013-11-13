@@ -24,6 +24,7 @@ public class Client {
 		project.assignTeam(team);
 		
 		//Story 2 test case
-		assertEquals("BookingTeam",project.getTeam().getTeamname());
+		assertEquals("BookingTeam",project.getTeam().toString());
+		
 	}
 }
