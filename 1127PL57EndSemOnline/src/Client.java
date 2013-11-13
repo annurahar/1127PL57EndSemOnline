@@ -93,5 +93,24 @@ public class Client {
 		//test case for story 6
 		assertEquals("Design database",member1.getTask().toString());
 		
+		//adding to do task to scrum board
+		ScrumBoard scrumBoard = new ScrumBoard();
+		scrumBoard.addToDoTask(task1);
+		scrumBoard.addToDoTask(task2);
+		scrumBoard.addToDoTask(task3);
+		scrumBoard.addToDoTask(task4);
+		
+		//updating scrum board : moving task1 to "doing" list on day1 of sprint1  
+		scrumBoard.removetoDoTask(task1);
+		scrumBoard.addDoing(task1);
+		
+		
+		//updating scrum board : moving task1 to "done" list at the end of day 2 
+		scrumBoard.removeDoing(task1);
+		scrumBoard.addDone(task1);
+		
+		//test case for story 7
+		assertEquals("Write business logic",scrumBoard.getToDoTask(0).toString());
+		
 	}	
 }
