@@ -72,5 +72,14 @@ public class Client {
 		assertEquals("Write business logic",story1.getTask(2).toString());
 		assertEquals(15,story1.getTask(1).getHours());
 		
+		//define sprint 1 and assign stories to it
+		Sprint sprint1 = new Sprint();
+		sprint1.assignStory(story1);
+		sprint1.assignStory(story2);
+		
+		//test case for story 5
+		assertEquals("As a system administrator I want to generate reportsc",sprint1.getStory(0).toString());
+		assertEquals(7,sprint1.getStory(1).getPriorityNumber());
+		
 	}
 }
