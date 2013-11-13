@@ -7,7 +7,7 @@ public class Project {
 		this.projectName = projectName;
 	}
 
-	public String getProjectName() {
+	public String toString() {
 		return projectName;
 	}
 

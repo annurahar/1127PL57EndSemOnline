@@ -17,7 +17,7 @@ public class Client {
 		Project project = new Project("TicketBooking");	
 		
 		//Story 1 test case
-		assertEquals("TicketBooking",project.getProjectName());
+		assertEquals("TicketBooking",project.toString());
 		
 		//create a team
 		Team team=new Team("BookingTeam");
@@ -26,5 +26,23 @@ public class Client {
 		//Story 2 test case
 		assertEquals("BookingTeam",project.getTeam().toString());
 		
+		ProductOwner productOwner = new ProductOwner("Kapil");
+		ScrumMaster scrumMaster = new ScrumMaster("Pravin");
+		TeamMember member1 = new TeamMember("annu","programmer");
+		TeamMember member2 = new TeamMember("abhishek","analyser");
+		TeamMember member3 = new TeamMember("prajyot","tester");
+		TeamMember member4 = new TeamMember("divya","documentation");
+		
+		//setting product owner 
+		team.setProductOwner(productOwner);
+		
+		//setting scrum master
+		team.setScrumMaster(scrumMaster);
+
+		//adding team members
+		team.addTeamMembers(member1);
+		team.addTeamMembers(member2);
+		team.addTeamMembers(member3);
+		team.addTeamMembers(member4);
 	}
 }
