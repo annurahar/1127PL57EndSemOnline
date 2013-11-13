@@ -50,7 +50,7 @@ public class Client {
 		Story story2 = new Story("As a system administrator I want to generate reports",7,5,15);
 		
 		//test case for story 3
-		assertEquals(5,story1.getPriorityNumber());
+		assertEquals(10,story1.getPriorityNumber());
 		assertEquals("As a system administrator I want to generate reports",story2.toString());
 	}
 }
