@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+
 
 public class Project {
 	private String projectName;
 	private Team team;
+	
 	
 	public Project(String projectName) {
 		this.projectName = projectName;

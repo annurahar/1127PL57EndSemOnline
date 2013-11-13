@@ -44,5 +44,13 @@ public class Client {
 		team.addTeamMembers(member2);
 		team.addTeamMembers(member3);
 		team.addTeamMembers(member4);
+		
+		//creating stories
+		Story story1 = new Story("As a customer I want to book tickets and make payments",10,10,40);
+		Story story2 = new Story("As a system administrator I want to generate reports",7,5,15);
+		
+		//test case for story 3
+		assertEquals(5,story1.getPriorityNumber());
+		assertEquals("As a system administrator I want to generate reports",story2.toString());
 	}
 }
