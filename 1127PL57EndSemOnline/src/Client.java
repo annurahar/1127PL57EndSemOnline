@@ -110,7 +110,7 @@ public class Client {
 		scrumBoard.addDone(task1);
 		
 		//test case for story 7
-		assertEquals("Write business logic",scrumBoard.getToDoTask(0).toString());
+		assertEquals("Design database",scrumBoard.getDone(0).toString());
 		
 	}	
 }
