@@ -19,4 +19,8 @@ public class Sprint {
 	{
 		return (Story) stories.get(index);
 	}
+
+	public ArrayList getStories() {
+		return stories;
+	}
 }

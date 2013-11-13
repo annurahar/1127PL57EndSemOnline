@@ -65,6 +65,8 @@ public class Client {
 		story1.addTask(task3);
 		story1.addTask(task4);
 		
+		
+		
 		//add task for story 2
 		story2.addTask(task1);
 		story2.addTask(task2);
@@ -112,5 +114,16 @@ public class Client {
 		//test case for story 7
 		assertEquals("Design database",scrumBoard.getDone(0).toString());
 		
+		//setting time taken by each member to complete their respective task
+		member1.completedTaskIn(15);
+		member2.completedTaskIn(14);
+		member3.completedTaskIn(30);
+		member4.completedTaskIn(10);
+		
+		//generate report in terms of burndown chart
+		Report report = new Report();
+		report.generateReportForSprint(sprint1);
+		//test case for story 8
+		assertEquals(true,report.isGenerated());
 	}	
 }
