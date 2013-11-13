@@ -78,7 +78,7 @@ public class Client {
 		sprint1.assignStory(story2);
 		
 		//test case for story 5
-		assertEquals("As a system administrator I want to generate reportsc",sprint1.getStory(0).toString());
+		assertEquals("As a customer I want to book tickets and make payments",sprint1.getStory(0).toString());
 		assertEquals(7,sprint1.getStory(1).getPriorityNumber());
 		
 	}
