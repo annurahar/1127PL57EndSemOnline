@@ -70,7 +70,7 @@ public class Client {
 		
 		//test case for story 4
 		assertEquals("Write business logic",story1.getTask(2).toString());
-		assertEquals(10,story1.getTask(1).getHours());
+		assertEquals(15,story1.getTask(1).getHours());
 		
 	}
 }
