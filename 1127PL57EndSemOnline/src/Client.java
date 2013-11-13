@@ -57,16 +57,19 @@ public class Client {
 		Task task1= new Task("Design database",10);
 		Task task2 = new Task("Design UI",15);
 		Task task3 =  new Task("Write business logic",25);
+		Task task4 = new Task("Write test cases",13);
 		
 		//add task for story 1
 		story1.addTask(task1);
 		story1.addTask(task2);
 		story1.addTask(task3);
+		story1.addTask(task4);
 		
 		//add task for story 2
 		story2.addTask(task1);
 		story2.addTask(task2);
 		story2.addTask(task3);
+		story2.addTask(task4);
 		
 		//test case for story 4
 		assertEquals("Write business logic",story1.getTask(2).toString());
@@ -80,6 +83,15 @@ public class Client {
 		//test case for story 5
 		assertEquals("As a customer I want to book tickets and make payments",sprint1.getStory(0).toString());
 		assertEquals(7,sprint1.getStory(1).getPriorityNumber());
+		
+		//allocating task to team members;
+		member1.allocateTask(task1);
+		member2.allocateTask(task2);
+		member3.allocateTask(task3);
+		member4.allocateTask(task4);
+		
+		//test case for story 6
+		assertEquals("Design database",member2.getTask().toString());
 		
 	}
 }
