@@ -4,7 +4,8 @@ public class Project {
 	
 	
 	public Project(String projectName) {
-			}
+		this.projectName = projectName;
+	}
 
 	public String getProjectName() {
 		return projectName;
